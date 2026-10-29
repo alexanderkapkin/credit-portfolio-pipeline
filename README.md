@@ -2,7 +2,7 @@
 
 A Python pipeline that takes loan-level credit data, checks it for errors, cleans it, and turns it into the portfolio analysis an investor or lender would ask for: arrears, write-offs, risk by grade, roll rates, vintage curves and a stress test.
 
-The data is synthetic credit bureau data from [creforge](https://github.com/chowkuanlaw/creforge): 20,000 borrowers, about 64,000 accounts across six products, and 36 months of payment history (1.4 million monthly rows). creforge can also corrupt a copy of the data with 16 kinds of realistic fault and keep an answer key, so the data-quality checks can be **scored**, not just run.
+The data is synthetic credit bureau data from [creforge](https://github.com/chowkuanlaw/creforge), consisting of 20,000 borrowers, about 64,000 accounts across six products, and 36 months of payment history (1.4 million monthly rows). creforge can also corrupt a copy of the data with 16 kinds of realistic fault and keep an answer key, so the data-quality checks can be **scored**.
 
 ## Results
 
@@ -43,8 +43,6 @@ Under creforge's stressed economy, peak 30+ days past due on auto loans rises fr
 5. **Report:** an Excel workbook (one sheet per table), a findings list for the servicer, and charts.
 
 ## Run it
-
-Easiest: open `credit_pipeline.ipynb` in Google Colab and choose Runtime, then Run all (about two minutes). Or locally:
 
 ```bash
 pip install -r requirements.txt
